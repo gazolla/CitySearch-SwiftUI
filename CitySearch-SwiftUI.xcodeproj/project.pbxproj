@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C366AF3328792A65001A81B5 /* CitySearch_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366AF3228792A65001A81B5 /* CitySearch_SwiftUIApp.swift */; };
+		C366AF3528792A65001A81B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366AF3428792A65001A81B5 /* ContentView.swift */; };
+		C366AF3728792A69001A81B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C366AF3628792A69001A81B5 /* Assets.xcassets */; };
+		C366AF3A28792A69001A81B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C366AF3928792A69001A81B5 /* Preview Assets.xcassets */; };
+		C366AF4428792A6A001A81B5 /* CitySearch_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366AF4328792A6A001A81B5 /* CitySearch_SwiftUITests.swift */; };
+		C366AF4E28792A6A001A81B5 /* CitySearch_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366AF4D28792A6A001A81B5 /* CitySearch_SwiftUIUITests.swift */; };
+		C366AF5028792A6A001A81B5 /* CitySearch_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366AF4F28792A6A001A81B5 /* CitySearch_SwiftUIUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C366AF4028792A6A001A81B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C366AF2728792A65001A81B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C366AF2E28792A65001A81B5;
+			remoteInfo = "CitySearch-SwiftUI";
+		};
+		C366AF4A28792A6A001A81B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C366AF2728792A65001A81B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C366AF2E28792A65001A81B5;
+			remoteInfo = "CitySearch-SwiftUI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C366AF2F28792A65001A81B5 /* CitySearch-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CitySearch-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C366AF3228792A65001A81B5 /* CitySearch_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearch_SwiftUIApp.swift; sourceTree = "<group>"; };
+		C366AF3428792A65001A81B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C366AF3628792A69001A81B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C366AF3928792A69001A81B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C366AF3F28792A6A001A81B5 /* CitySearch-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CitySearch-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C366AF4328792A6A001A81B5 /* CitySearch_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearch_SwiftUITests.swift; sourceTree = "<group>"; };
+		C366AF4928792A6A001A81B5 /* CitySearch-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CitySearch-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C366AF4D28792A6A001A81B5 /* CitySearch_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearch_SwiftUIUITests.swift; sourceTree = "<group>"; };
+		C366AF4F28792A6A001A81B5 /* CitySearch_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearch_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C366AF2C28792A65001A81B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C366AF3C28792A6A001A81B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C366AF4628792A6A001A81B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C366AF2628792A65001A81B5 = {
+			isa = PBXGroup;
+			children = (
+				C366AF3128792A65001A81B5 /* CitySearch-SwiftUI */,
+				C366AF4228792A6A001A81B5 /* CitySearch-SwiftUITests */,
+				C366AF4C28792A6A001A81B5 /* CitySearch-SwiftUIUITests */,
+				C366AF3028792A65001A81B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C366AF3028792A65001A81B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C366AF2F28792A65001A81B5 /* CitySearch-SwiftUI.app */,
+				C366AF3F28792A6A001A81B5 /* CitySearch-SwiftUITests.xctest */,
+				C366AF4928792A6A001A81B5 /* CitySearch-SwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C366AF3128792A65001A81B5 /* CitySearch-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				C366AF3228792A65001A81B5 /* CitySearch_SwiftUIApp.swift */,
+				C366AF3428792A65001A81B5 /* ContentView.swift */,
+				C366AF3628792A69001A81B5 /* Assets.xcassets */,
+				C366AF3828792A69001A81B5 /* Preview Content */,
+			);
+			path = "CitySearch-SwiftUI";
+			sourceTree = "<group>";
+		};
+		C366AF3828792A69001A81B5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C366AF3928792A69001A81B5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C366AF4228792A6A001A81B5 /* CitySearch-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C366AF4328792A6A001A81B5 /* CitySearch_SwiftUITests.swift */,
+			);
+			path = "CitySearch-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		C366AF4C28792A6A001A81B5 /* CitySearch-SwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C366AF4D28792A6A001A81B5 /* CitySearch_SwiftUIUITests.swift */,
+				C366AF4F28792A6A001A81B5 /* CitySearch_SwiftUIUITestsLaunchTests.swift */,
+			);
+			path = "CitySearch-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C366AF2E28792A65001A81B5 /* CitySearch-SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C366AF5328792A6A001A81B5 /* Build configuration list for PBXNativeTarget "CitySearch-SwiftUI" */;
+			buildPhases = (
+				C366AF2B28792A65001A81B5 /* Sources */,
+				C366AF2C28792A65001A81B5 /* Frameworks */,
+				C366AF2D28792A65001A81B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CitySearch-SwiftUI";
+			productName = "CitySearch-SwiftUI";
+			productReference = C366AF2F28792A65001A81B5 /* CitySearch-SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C366AF3E28792A6A001A81B5 /* CitySearch-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C366AF5628792A6A001A81B5 /* Build configuration list for PBXNativeTarget "CitySearch-SwiftUITests" */;
+			buildPhases = (
+				C366AF3B28792A6A001A81B5 /* Sources */,
+				C366AF3C28792A6A001A81B5 /* Frameworks */,
+				C366AF3D28792A6A001A81B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C366AF4128792A6A001A81B5 /* PBXTargetDependency */,
+			);
+			name = "CitySearch-SwiftUITests";
+			productName = "CitySearch-SwiftUITests";
+			productReference = C366AF3F28792A6A001A81B5 /* CitySearch-SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C366AF4828792A6A001A81B5 /* CitySearch-SwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C366AF5928792A6A001A81B5 /* Build configuration list for PBXNativeTarget "CitySearch-SwiftUIUITests" */;
+			buildPhases = (
+				C366AF4528792A6A001A81B5 /* Sources */,
+				C366AF4628792A6A001A81B5 /* Frameworks */,
+				C366AF4728792A6A001A81B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C366AF4B28792A6A001A81B5 /* PBXTargetDependency */,
+			);
+			name = "CitySearch-SwiftUIUITests";
+			productName = "CitySearch-SwiftUIUITests";
+			productReference = C366AF4928792A6A001A81B5 /* CitySearch-SwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C366AF2728792A65001A81B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					C366AF2E28792A65001A81B5 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					C366AF3E28792A6A001A81B5 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C366AF2E28792A65001A81B5;
+					};
+					C366AF4828792A6A001A81B5 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C366AF2E28792A65001A81B5;
+					};
+				};
+			};
+			buildConfigurationList = C366AF2A28792A65001A81B5 /* Build configuration list for PBXProject "CitySearch-SwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C366AF2628792A65001A81B5;
+			productRefGroup = C366AF3028792A65001A81B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C366AF2E28792A65001A81B5 /* CitySearch-SwiftUI */,
+				C366AF3E28792A6A001A81B5 /* CitySearch-SwiftUITests */,
+				C366AF4828792A6A001A81B5 /* CitySearch-SwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C366AF2D28792A65001A81B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C366AF3A28792A69001A81B5 /* Preview Assets.xcassets in Resources */,
+				C366AF3728792A69001A81B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C366AF3D28792A6A001A81B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C366AF4728792A6A001A81B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C366AF2B28792A65001A81B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C366AF3528792A65001A81B5 /* ContentView.swift in Sources */,
+				C366AF3328792A65001A81B5 /* CitySearch_SwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C366AF3B28792A6A001A81B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C366AF4428792A6A001A81B5 /* CitySearch_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C366AF4528792A6A001A81B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C366AF4E28792A6A001A81B5 /* CitySearch_SwiftUIUITests.swift in Sources */,
+				C366AF5028792A6A001A81B5 /* CitySearch_SwiftUIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C366AF4128792A6A001A81B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C366AF2E28792A65001A81B5 /* CitySearch-SwiftUI */;
+			targetProxy = C366AF4028792A6A001A81B5 /* PBXContainerItemProxy */;
+		};
+		C366AF4B28792A6A001A81B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C366AF2E28792A65001A81B5 /* CitySearch-SwiftUI */;
+			targetProxy = C366AF4A28792A6A001A81B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C366AF5128792A6A001A81B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C366AF5228792A6A001A81B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C366AF5428792A6A001A81B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CitySearch-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = MA5BADG5AW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gazapps.CitySearch-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C366AF5528792A6A001A81B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CitySearch-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = MA5BADG5AW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gazapps.CitySearch-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C366AF5728792A6A001A81B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA5BADG5AW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gazapps.CitySearch-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CitySearch-SwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CitySearch-SwiftUI";
+			};
+			name = Debug;
+		};
+		C366AF5828792A6A001A81B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA5BADG5AW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gazapps.CitySearch-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CitySearch-SwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CitySearch-SwiftUI";
+			};
+			name = Release;
+		};
+		C366AF5A28792A6A001A81B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA5BADG5AW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gazapps.CitySearch-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CitySearch-SwiftUI";
+			};
+			name = Debug;
+		};
+		C366AF5B28792A6A001A81B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MA5BADG5AW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gazapps.CitySearch-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CitySearch-SwiftUI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C366AF2A28792A65001A81B5 /* Build configuration list for PBXProject "CitySearch-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C366AF5128792A6A001A81B5 /* Debug */,
+				C366AF5228792A6A001A81B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C366AF5328792A6A001A81B5 /* Build configuration list for PBXNativeTarget "CitySearch-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C366AF5428792A6A001A81B5 /* Debug */,
+				C366AF5528792A6A001A81B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C366AF5628792A6A001A81B5 /* Build configuration list for PBXNativeTarget "CitySearch-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C366AF5728792A6A001A81B5 /* Debug */,
+				C366AF5828792A6A001A81B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C366AF5928792A6A001A81B5 /* Build configuration list for PBXNativeTarget "CitySearch-SwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C366AF5A28792A6A001A81B5 /* Debug */,
+				C366AF5B28792A6A001A81B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C366AF2728792A65001A81B5 /* Project object */;
+}

@@ -15,6 +15,7 @@
 		C366AF4E28792A6A001A81B5 /* CitySearch_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366AF4D28792A6A001A81B5 /* CitySearch_SwiftUIUITests.swift */; };
 		C366AF5028792A6A001A81B5 /* CitySearch_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366AF4F28792A6A001A81B5 /* CitySearch_SwiftUIUITestsLaunchTests.swift */; };
 		C3D99184287B555600CD747B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D99183287B555600CD747B /* Location.swift */; };
+		C3D99186287B56E300CD747B /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D99185287B56E300CD747B /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		C366AF4D28792A6A001A81B5 /* CitySearch_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearch_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		C366AF4F28792A6A001A81B5 /* CitySearch_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearch_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C3D99183287B555600CD747B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		C3D99185287B56E300CD747B /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				C366AF3628792A69001A81B5 /* Assets.xcassets */,
 				C366AF3828792A69001A81B5 /* Preview Content */,
 				C3D99183287B555600CD747B /* Location.swift */,
+				C3D99185287B56E300CD747B /* LocationViewModel.swift */,
 			);
 			path = "CitySearch-SwiftUI";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				C366AF3528792A65001A81B5 /* ContentView.swift in Sources */,
 				C366AF3328792A65001A81B5 /* CitySearch_SwiftUIApp.swift in Sources */,
 				C3D99184287B555600CD747B /* Location.swift in Sources */,
+				C3D99186287B56E300CD747B /* LocationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

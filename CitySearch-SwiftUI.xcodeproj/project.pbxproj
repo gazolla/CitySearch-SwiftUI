@@ -16,6 +16,8 @@
 		C366AF5028792A6A001A81B5 /* CitySearch_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366AF4F28792A6A001A81B5 /* CitySearch_SwiftUIUITestsLaunchTests.swift */; };
 		C3D99184287B555600CD747B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D99183287B555600CD747B /* Location.swift */; };
 		C3D99186287B56E300CD747B /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D99185287B56E300CD747B /* LocationViewModel.swift */; };
+		C3D99188287B94BC00CD747B /* SearchCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D99187287B94BC00CD747B /* SearchCityView.swift */; };
+		C3D9918A287C538400CD747B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D99189287C538400CD747B /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		C366AF4F28792A6A001A81B5 /* CitySearch_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearch_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C3D99183287B555600CD747B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		C3D99185287B56E300CD747B /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		C3D99187287B94BC00CD747B /* SearchCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityView.swift; sourceTree = "<group>"; };
+		C3D99189287C538400CD747B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				C366AF3828792A69001A81B5 /* Preview Content */,
 				C3D99183287B555600CD747B /* Location.swift */,
 				C3D99185287B56E300CD747B /* LocationViewModel.swift */,
+				C3D99187287B94BC00CD747B /* SearchCityView.swift */,
+				C3D99189287C538400CD747B /* SearchBar.swift */,
 			);
 			path = "CitySearch-SwiftUI";
 			sourceTree = "<group>";
@@ -266,7 +272,9 @@
 				C366AF3528792A65001A81B5 /* ContentView.swift in Sources */,
 				C366AF3328792A65001A81B5 /* CitySearch_SwiftUIApp.swift in Sources */,
 				C3D99184287B555600CD747B /* Location.swift in Sources */,
+				C3D99188287B94BC00CD747B /* SearchCityView.swift in Sources */,
 				C3D99186287B56E300CD747B /* LocationViewModel.swift in Sources */,
+				C3D9918A287C538400CD747B /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

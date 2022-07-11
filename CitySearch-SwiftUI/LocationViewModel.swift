@@ -10,7 +10,15 @@ import MapKit
 
 class LocationViewModel: ObservableObject {
     @Published var locations:[Location] = []
-   // @Published var currentLocation:Location = Location()
+    @Published var currentLocation:Location?
+    
+    
+    func addLocation(){
+        guard let location = currentLocation else {
+            return
+        }
+        self.locations.append(location)
+    }
     
     func searchLocation(text:String){
         let geoCoder = CLGeocoder()
@@ -20,9 +28,7 @@ class LocationViewModel: ObservableObject {
                 print(error!)
             }
             if placemark != nil {
-                /*self.location*/
-                let location = Location(placemark: placemark![0])
-                self.locations.append(location)
+                self.currentLocation = Location(placemark: placemark![0])
             }
         }
     }

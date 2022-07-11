@@ -8,15 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var showSearchCity: Bool = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("City Search!")
+            
+            Button("Add City") {
+                showSearchCity.toggle()
+            }
+            .sheet(isPresented: $showSearchCity) {
+                SearchCityView()
+            }
         }
     }
 }
+
+// MARK: Small Custom Detent
+extension PresentationDetent{
+    static let small = Self.height(100)
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

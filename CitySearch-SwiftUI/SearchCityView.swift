@@ -23,9 +23,27 @@ struct SearchCityView: View {
         VStack{
             SearchBar(text: $searchText)
                 .padding(.top)
-            Map(coordinateRegion: $region)
-            
+            Map(coordinateRegion:$region)
                 .presentationDetents([ .medium, .large])
+        }
+        .onChange(of: searchText) { newValue in
+            lvm.searchLocation(text: newValue)
+            if let coordinates = lvm.currentLocation?.coordinates{
+                self.region = MKCoordinateRegion(
+                    center: coordinates,
+                    span:MKCoordinateSpan(
+                        latitudeDelta: 0.5,
+                        longitudeDelta: 0.5))
+            } else {
+                self.region = MKCoordinateRegion(
+                    center: CLLocationCoordinate2D(
+                        latitude: 51.507222,
+                        longitude: -0.1275),
+                    span: MKCoordinateSpan(
+                        latitudeDelta: 0.5,
+                        longitudeDelta: 0.5))
+            }
+            
         }
     }
 }

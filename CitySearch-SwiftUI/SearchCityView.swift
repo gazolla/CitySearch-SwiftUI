@@ -23,6 +23,9 @@ struct SearchCityView: View {
         VStack{
             SearchBar(text: $searchText)
                 .padding(.top)
+            if let _ = lvm.currentLocation {
+                CityDetailView(lvm: lvm)
+            }
             Map(coordinateRegion:$region)
                 .presentationDetents([ .medium, .large])
         }

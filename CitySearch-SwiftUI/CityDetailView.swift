@@ -11,35 +11,41 @@ struct CityDetailView: View {
     
     @StateObject var lvm: LocationViewModel
     
-
     var body: some View {
-        VStack(){
-            HStack{
-                Image(lvm.currentLocation!.flagIconURL!)
-                    .frame(alignment: .leading)
-                VStack(alignment: .leading){
-                    Text(lvm.currentLocation!.name!)
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity, alignment:.leading)
-                    Text(lvm.currentLocation!.country!)
-                        .fontWeight(.thin)
+        if let location = lvm.currentLocation {
+            VStack(){
+                CityCellView(city:location)
+                Button {
+                    lvm.addLocation()
+                } label: {
+                    Text("Add City")
+                        .frame(maxWidth: .infinity, maxHeight: 35)
+                        .fontWeight(.medium)
+                        .background(Color.blue)
+                        .foregroundColor(Color.white)
+                        .cornerRadius(5)
                 }
             }
-            
-            Button {
-                
-            } label: {
-                Text("Add City")
-                    .frame(maxWidth: .infinity, maxHeight: 35)
-                    .fontWeight(.medium)
-                    .background(Color.blue)
-                    .foregroundColor(Color.white)
-                    .cornerRadius(5)
-            }
+            .padding()
         }
         
-        
-        .padding()
+    }
+}
+
+struct CityCellView:View {
+    @State var city: Location
+    var body: some View {
+        HStack{
+                Image(city.flagIconURL ?? "empty")
+                    .frame(alignment: .leading)
+                VStack(alignment: .leading){
+                    Text(city.name ?? "")
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity, alignment:.leading)
+                    Text(city.country ?? "")
+                        .fontWeight(.thin)
+                }
+        }
     }
 }
 

@@ -17,16 +17,7 @@ struct ContentView: View {
         NavigationView{
             List{
                 ForEach(lvm.locations){ city in
-                    HStack{
-                       // Image(currency.countryCode!)
-                        VStack(alignment:.leading){
-                            Text("/(city.name) - /(city.administrativeArea)")
-                            Text(city.country ?? "" )
-                                .font(.footnote)
-                                .foregroundColor(.gray)
-                        }
-                    }
-                    
+                    CityCellView(city: city)
                 }
             }
             .navigationTitle("Cities")
@@ -39,9 +30,6 @@ struct ContentView: View {
                 }
             )
         }
-        
-            
-        
     }
 }
 

@@ -12,13 +12,10 @@ class LocationViewModel: ObservableObject {
     
     static let instance = LocationViewModel()
     
-    private init(){
-        
-    }
+    private init(){}
     
     @Published var locations:[Location] = []
     @Published var currentLocation:Location?
-    
     
     func addLocation(){
         guard let location = currentLocation else {
@@ -36,6 +33,8 @@ class LocationViewModel: ObservableObject {
             }
             if placemark != nil {
                 self.currentLocation = Location(placemark: placemark![0])
+            } else {
+                self.currentLocation = nil
             }
         }
     }

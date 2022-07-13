@@ -10,17 +10,38 @@ import SwiftUI
 struct ContentView: View {
     
     @State var showSearchCity: Bool = false
-    
+    @StateObject private var lvm = LocationViewModel.instance
+
     var body: some View {
-        VStack {
-            
-            Button("Add City") {
+        
+        NavigationView{
+            List{
+                ForEach(lvm.locations){ city in
+                    HStack{
+                       // Image(currency.countryCode!)
+                        VStack(alignment:.leading){
+                            Text("/(city.name) - /(city.administrativeArea)")
+                            Text(city.country ?? "" )
+                                .font(.footnote)
+                                .foregroundColor(.gray)
+                        }
+                    }
+                    
+                }
+            }
+            .navigationTitle("Cities")
+            .navigationBarItems(trailing:
+                                    Button("Add City") {
                 showSearchCity.toggle()
             }
-            .sheet(isPresented: $showSearchCity) {
-                SearchCityView()
-            }
+                .sheet(isPresented: $showSearchCity) {
+                    SearchCityView()
+                }
+            )
         }
+        
+            
+        
     }
 }
 

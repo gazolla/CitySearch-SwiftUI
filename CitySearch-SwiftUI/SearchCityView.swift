@@ -18,7 +18,7 @@ struct SearchCityView: View {
         span: MKCoordinateSpan(
             latitudeDelta: 0.5,
             longitudeDelta: 0.5))
-    @StateObject private var lvm = LocationViewModel()
+    @StateObject private var lvm = LocationViewModel.instance
     var body: some View {
         VStack{
             SearchBar(text: $searchText)

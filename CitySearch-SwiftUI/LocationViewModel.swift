@@ -9,6 +9,13 @@ import Foundation
 import MapKit
 
 class LocationViewModel: ObservableObject {
+    
+    static let instance = LocationViewModel()
+    
+    private init(){
+        
+    }
+    
     @Published var locations:[Location] = []
     @Published var currentLocation:Location?
     

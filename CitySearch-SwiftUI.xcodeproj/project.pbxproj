@@ -20,6 +20,7 @@
 		C3D9918A287C538400CD747B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D99189287C538400CD747B /* SearchBar.swift */; };
 		C3DA9F84287EEBB400706119 /* CityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA9F83287EEBB400706119 /* CityDetailView.swift */; };
 		C3DA9F86287EEC5400706119 /* Flags in Resources */ = {isa = PBXBuildFile; fileRef = C3DA9F85287EEC5400706119 /* Flags */; };
+		C3DA9F882880507100706119 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA9F872880507100706119 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		C3D99189287C538400CD747B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		C3DA9F83287EEBB400706119 /* CityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailView.swift; sourceTree = "<group>"; };
 		C3DA9F85287EEC5400706119 /* Flags */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Flags; sourceTree = "<group>"; };
+		C3DA9F872880507100706119 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				C3D99187287B94BC00CD747B /* SearchCityView.swift */,
 				C3D99189287C538400CD747B /* SearchBar.swift */,
 				C3DA9F83287EEBB400706119 /* CityDetailView.swift */,
+				C3DA9F872880507100706119 /* MapView.swift */,
 			);
 			path = "CitySearch-SwiftUI";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3DA9F84287EEBB400706119 /* CityDetailView.swift in Sources */,
+				C3DA9F882880507100706119 /* MapView.swift in Sources */,
 				C366AF3528792A65001A81B5 /* ContentView.swift in Sources */,
 				C366AF3328792A65001A81B5 /* CitySearch_SwiftUIApp.swift in Sources */,
 				C3D99184287B555600CD747B /* Location.swift in Sources */,

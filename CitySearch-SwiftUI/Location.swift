@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-struct Location: Identifiable{
+struct Location: Identifiable, Equatable{
     var id = UUID()
     var name:String?
     var administrativeArea:String?
@@ -35,4 +35,9 @@ struct Location: Identifiable{
         self.region = placemark.region
         self.flagIconURL = placemark.isoCountryCode
     }
+    
+    static func == (lhs: Location, rhs: Location) -> Bool {
+        lhs.id == rhs.id
+    }
+
 }

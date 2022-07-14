@@ -21,6 +21,7 @@
 		C3DA9F84287EEBB400706119 /* CityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA9F83287EEBB400706119 /* CityDetailView.swift */; };
 		C3DA9F86287EEC5400706119 /* Flags in Resources */ = {isa = PBXBuildFile; fileRef = C3DA9F85287EEC5400706119 /* Flags */; };
 		C3DA9F882880507100706119 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA9F872880507100706119 /* MapView.swift */; };
+		C3DA9F8A28806B5300706119 /* CitySearch.GIF in Resources */ = {isa = PBXBuildFile; fileRef = C3DA9F8928806B5300706119 /* CitySearch.GIF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		C3DA9F83287EEBB400706119 /* CityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailView.swift; sourceTree = "<group>"; };
 		C3DA9F85287EEC5400706119 /* Flags */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Flags; sourceTree = "<group>"; };
 		C3DA9F872880507100706119 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C3DA9F8928806B5300706119 /* CitySearch.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CitySearch.GIF; sourceTree = "<group>"; };
+		C3DA9F8B28806BC900706119 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 		C366AF2628792A65001A81B5 = {
 			isa = PBXGroup;
 			children = (
+				C3DA9F8B28806BC900706119 /* README.md */,
+				C3DA9F8928806B5300706119 /* CitySearch.GIF */,
 				C366AF3128792A65001A81B5 /* CitySearch-SwiftUI */,
 				C366AF4228792A6A001A81B5 /* CitySearch-SwiftUITests */,
 				C366AF4C28792A6A001A81B5 /* CitySearch-SwiftUIUITests */,
@@ -252,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3DA9F8A28806B5300706119 /* CitySearch.GIF in Resources */,
 				C3DA9F86287EEC5400706119 /* Flags in Resources */,
 				C366AF3A28792A69001A81B5 /* Preview Assets.xcassets in Resources */,
 				C366AF3728792A69001A81B5 /* Assets.xcassets in Resources */,

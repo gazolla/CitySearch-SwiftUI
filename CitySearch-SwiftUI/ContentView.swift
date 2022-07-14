@@ -10,8 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     @State var showSearchCity: Bool = false
-    @StateObject private var lvm = LocationViewModel.instance
-
+    @ObservedObject private var lvm = LocationViewModel.instance
+    
+    
     var body: some View {
         
         NavigationView{
@@ -26,7 +27,7 @@ struct ContentView: View {
                 showSearchCity.toggle()
             }
                 .sheet(isPresented: $showSearchCity) {
-                    SearchCityView()
+                    SearchCityView(lvm:lvm)
                 }
             )
         }

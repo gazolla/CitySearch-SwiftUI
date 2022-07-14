@@ -9,14 +9,14 @@ import SwiftUI
 
 struct CityDetailView: View {
     
-    @StateObject var lvm: LocationViewModel
+    @ObservedObject var lvm: LocationViewModel
     
     var body: some View {
         if let location = lvm.currentLocation {
             VStack(){
                 CityCellView(city:location)
                 Button {
-                    lvm.addLocation()
+                    lvm.addLocation(location:location)
                 } label: {
                     Text("Add City")
                         .frame(maxWidth: .infinity, maxHeight: 35)

@@ -18,7 +18,7 @@ struct SearchCityView: View {
         span: MKCoordinateSpan(
             latitudeDelta: 0.5,
             longitudeDelta: 0.5))
-    @StateObject private var lvm = LocationViewModel.instance
+    @StateObject var lvm: LocationViewModel
     var body: some View {
         VStack{
             SearchBar(text: $searchText)
@@ -29,30 +29,39 @@ struct SearchCityView: View {
             Map(coordinateRegion:$region)
                 .presentationDetents([ .medium, .large])
         }
-        .onChange(of: searchText) { newValue in
-            lvm.searchLocation(text: newValue)
-            if let coordinates = lvm.currentLocation?.coordinates{
+        .onSubmit {
+            lvm.searchLocation(text: searchText)
+            print("*********")
+            print(lvm.currentLocation!)
+            print("********")
+            if let city = lvm.currentLocation{
+                print("*********")
+                print(city)
+                print("********")
                 self.region = MKCoordinateRegion(
-                    center: coordinates,
+                    center: city.coordinates!,
                     span:MKCoordinateSpan(
                         latitudeDelta: 0.5,
                         longitudeDelta: 0.5))
-            } else {
-                self.region = MKCoordinateRegion(
-                    center: CLLocationCoordinate2D(
-                        latitude: 51.507222,
-                        longitude: -0.1275),
-                    span: MKCoordinateSpan(
-                        latitudeDelta: 0.5,
-                        longitudeDelta: 0.5))
             }
-            
         }
+       .onChange(of: searchText) { newValue in
+           if newValue.isEmpty {
+               lvm.searchLocation(text: newValue)
+           }
+        }
+    }
+}
+
+struct Preview: View {
+    var lvm = LocationViewModel.instance
+    var body: some View {
+        SearchCityView(lvm:lvm)
     }
 }
 
 struct SearchCityView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchCityView()
+        Preview()
     }
 }

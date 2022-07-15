@@ -9,9 +9,11 @@ import SwiftUI
 import MapKit
 
 struct SearchCityView: View {
+
     @Environment(\.dismiss) var dismiss
     @State private var searchText = ""
     @ObservedObject var lvm: LocationViewModel
+
     var body: some View {
         VStack{
             SearchBar(text: $searchText)
@@ -28,7 +30,7 @@ struct SearchCityView: View {
         .onSubmit {
             lvm.searchLocation(text: searchText)
         }
-       .onChange(of: searchText) { newValue in
+        .onChange(of: searchText) { newValue in
            if newValue.isEmpty {
                lvm.searchLocation(text: newValue)
            }

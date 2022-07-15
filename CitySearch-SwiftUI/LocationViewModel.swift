@@ -22,7 +22,6 @@ class LocationViewModel: ObservableObject {
     }
     
     func searchLocation(text:String){
-        
         guard !text.isEmpty else {
             self.currentLocation = nil
             return
@@ -37,10 +36,6 @@ class LocationViewModel: ObservableObject {
             if placemark != nil {
                 self.currentLocation = nil
                 self.currentLocation = Location(placemark: placemark![0])
-                print("--------------")
-                print(self.currentLocation!)
-                print("--------------")
-                print(placemark!)
             } else {
                 self.currentLocation = nil
             }

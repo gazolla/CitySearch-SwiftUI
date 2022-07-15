@@ -11,7 +11,7 @@ import MapKit
 struct SearchCityView: View {
     @Environment(\.dismiss) var dismiss
     @State private var searchText = ""
-    @StateObject var lvm: LocationViewModel
+    @ObservedObject var lvm: LocationViewModel
     var body: some View {
         VStack{
             SearchBar(text: $searchText)

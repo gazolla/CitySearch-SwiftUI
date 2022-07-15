@@ -10,11 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     @State var showSearchCity: Bool = false
-    @ObservedObject private var lvm = LocationViewModel.instance
-    
-    
+    @StateObject private var lvm = LocationViewModel.instance
+
     var body: some View {
-        
         NavigationView{
             List{
                 ForEach(lvm.locations){ city in
@@ -23,13 +21,17 @@ struct ContentView: View {
             }
             .navigationTitle("Cities")
             .navigationBarItems(trailing:
-                                    Button("Add City") {
-                showSearchCity.toggle()
-            }
-                .sheet(isPresented: $showSearchCity) {
-                    SearchCityView(lvm:lvm)
+                    Button("Add City") {
+                        showSearchCity.toggle()
+                    }
+                    .sheet(isPresented: $showSearchCity) {
+                        SearchCityView(lvm:lvm)
+                    })
+            .onChange(of: showSearchCity) { newValue in
+                if !newValue {
+                    lvm.currentLocation = nil
                 }
-            )
+            }
         }
     }
 }
@@ -38,7 +40,6 @@ struct ContentView: View {
 extension PresentationDetent{
     static let small = Self.height(100)
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

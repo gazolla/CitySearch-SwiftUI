@@ -18,7 +18,6 @@ struct Location: Identifiable, Equatable{
     var flagIconURL:String?
     
     init(name: String? = nil, administrativeArea: String? = nil, country: String? = nil, coordinates: CLLocationCoordinate2D? = nil, region: CLRegion? = nil, flagIconURL: String? = nil) {
-      
         self.name = name
         self.administrativeArea = administrativeArea
         self.country = country

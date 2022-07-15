@@ -37,12 +37,10 @@ struct MapView: View {
 
 struct MapPreviewWrapper:View {
     var _lvm: LocationViewModel
-    
     init() {
         self._lvm = LocationViewModel.instance
         self._lvm.currentLocation = Location(name:"Brasilia", country:"Brasil", flagIconURL: "BR")
     }
-    
     var body: some View {
         MapView(city: _lvm.currentLocation!)
     }

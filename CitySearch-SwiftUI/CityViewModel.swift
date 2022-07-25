@@ -55,6 +55,9 @@ class CityViewModel: ObservableObject {
         }
     }
 
+    func deleteCity( at indexSet: IndexSet){
+        cities.remove(atOffsets: indexSet)
+    }
     
     func searchCity(text:String){
         guard !text.isEmpty else {

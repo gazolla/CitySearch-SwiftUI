@@ -10,14 +10,15 @@ import SwiftUI
 struct ContentView: View {
     
     @State var showSearchCity: Bool = false
-    @StateObject private var lvm = CityViewModel.instance
+    @StateObject private var cvm = CityViewModel.instance
 
     var body: some View {
         NavigationView{
             List{
-                ForEach(lvm.cities){ city in
+                ForEach(cvm.cities){ city in
                     CityCellView(city: city)
                 }
+                .onDelete(perform: deleteCity)
             }
             .navigationTitle("Cities")
             .navigationBarItems(trailing:
@@ -25,14 +26,18 @@ struct ContentView: View {
                         showSearchCity.toggle()
                     }
                     .sheet(isPresented: $showSearchCity) {
-                        CitySearchView(cvm:lvm)
+                        CitySearchView(cvm:cvm)
                     })
             .onChange(of: showSearchCity) { newValue in
                 if !newValue {
-                    lvm.currentCity = nil
+                    cvm.currentCity = nil
                 }
             }
         }
+    }
+    private func deleteCity(at indexSet: IndexSet){
+        cvm.deleteCity(at: indexSet)
+        try! cvm.saveCities()
     }
 }
 

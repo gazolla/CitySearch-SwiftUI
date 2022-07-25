@@ -10,12 +10,12 @@ import SwiftUI
 struct ContentView: View {
     
     @State var showSearchCity: Bool = false
-    @StateObject private var lvm = LocationViewModel.instance
+    @StateObject private var lvm = CityViewModel.instance
 
     var body: some View {
         NavigationView{
             List{
-                ForEach(lvm.locations){ city in
+                ForEach(lvm.cities){ city in
                     CityCellView(city: city)
                 }
             }
@@ -25,11 +25,11 @@ struct ContentView: View {
                         showSearchCity.toggle()
                     }
                     .sheet(isPresented: $showSearchCity) {
-                        SearchCityView(lvm:lvm)
+                        CitySearchView(cvm:lvm)
                     })
             .onChange(of: showSearchCity) { newValue in
                 if !newValue {
-                    lvm.currentLocation = nil
+                    lvm.currentCity = nil
                 }
             }
         }

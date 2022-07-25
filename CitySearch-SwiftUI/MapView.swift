@@ -18,7 +18,7 @@ struct MapView: View {
             latitudeDelta: 0.5,
             longitudeDelta: 0.5))
     
-    @State var city: Location
+    @State var city: City
     
     var body: some View {
         Map(coordinateRegion:$region)
@@ -36,13 +36,13 @@ struct MapView: View {
 }
 
 struct MapPreviewWrapper:View {
-    var _lvm: LocationViewModel
+    var _lvm: CityViewModel
     init() {
-        self._lvm = LocationViewModel.instance
-        self._lvm.currentLocation = Location(name:"Brasilia", country:"Brasil", flagIconURL: "BR")
+        self._lvm = CityViewModel.instance
+        self._lvm.currentCity = City(name:"Brasilia", country:"Brasil", flagIconURL: "BR")
     }
     var body: some View {
-        MapView(city: _lvm.currentLocation!)
+        MapView(city: _lvm.currentCity!)
     }
 }
 

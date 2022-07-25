@@ -8,40 +8,43 @@
 import SwiftUI
 import MapKit
 
-struct SearchCityView: View {
+struct CitySearchView: View {
 
     @Environment(\.dismiss) var dismiss
     @State private var searchText = ""
-    @ObservedObject var lvm: LocationViewModel
+    @ObservedObject var cvm: CityViewModel
 
     var body: some View {
         VStack{
             SearchBar(text: $searchText)
                 .padding(.top)
-            if let city = lvm.currentLocation {
-                CityDetailView(lvm: lvm)
+            if let city = cvm.currentCity {
+                CityDetailView(lvm: cvm)
                 MapView(city: city)
                     .presentationDetents([ .medium, .large])
             } else {
-                MapView(city: lvm.currentLocation ?? Location())
+                MapView(city: cvm.currentCity ?? City())
                     .presentationDetents([ .medium, .large])
             }
         }
+        .onDisappear{
+            try! cvm.saveCities()
+        }
         .onSubmit {
-            lvm.searchLocation(text: searchText)
+            cvm.searchCity(text: searchText)
         }
         .onChange(of: searchText) { newValue in
            if newValue.isEmpty {
-               lvm.searchLocation(text: newValue)
+               cvm.searchCity(text: newValue)
            }
         }
     }
 }
 
 struct Preview: View {
-    var lvm = LocationViewModel.instance
+    var lvm = CityViewModel.instance
     var body: some View {
-        SearchCityView(lvm:lvm)
+        CitySearchView(cvm:lvm)
     }
 }
 

@@ -19,7 +19,7 @@ struct CitySearchView: View {
             SearchBar(text: $searchText)
                 .padding(.top)
             if let city = cvm.currentCity {
-                CityDetailView(lvm: cvm)
+                CityDetailView(cvm: cvm)
                 MapView(city: city)
                     .presentationDetents([ .medium, .large])
             } else {

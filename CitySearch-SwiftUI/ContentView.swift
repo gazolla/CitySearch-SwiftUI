@@ -18,38 +18,33 @@ struct ContentView: View {
         NavigationView{
             if cvm.cities.isEmpty {
                 CityEmptyListView()
-                    .navigationTitle("Cities")
-                    .navigationBarItems(trailing:
-                            Button("Add City") {
-                                showSearchCity.toggle()
-                            }
-                            .sheet(isPresented: $showSearchCity) {
-                                CitySearchView(cvm:cvm)
-                            })
-                    .onChange(of: showSearchCity) { newValue in
-                        if !newValue {
-                            cvm.currentCity = nil
-                        }
-                    }
+                    .modifier(CityListModifier(showSearchCity: showSearchCity, cvm: cvm))
             } else {
                 CityListView()
-                    .navigationTitle("Cities")
-                    .navigationBarItems(trailing:
-                            Button("Add City") {
-                                showSearchCity.toggle()
-                            }
-                            .sheet(isPresented: $showSearchCity) {
-                                CitySearchView(cvm:cvm)
-                            })
-                    .onChange(of: showSearchCity) { newValue in
-                        if !newValue {
-                            cvm.currentCity = nil
-                        }
+                    .modifier(CityListModifier(showSearchCity: showSearchCity, cvm: cvm))
             }
         }
-        
-        }
+    }
+}
 
+struct CityListModifier: ViewModifier {
+    @State var showSearchCity: Bool
+    @ObservedObject var cvm:CityViewModel
+    func body(content: Content) -> some View {
+        content
+            .navigationTitle("Cities")
+            .navigationBarItems(trailing:
+                    Button("Add City") {
+                        showSearchCity.toggle()
+                    }
+                    .sheet(isPresented: $showSearchCity) {
+                        CitySearchView(cvm:cvm)
+                    })
+            .onChange(of: showSearchCity) { newValue in
+                if !newValue {
+                    cvm.currentCity = nil
+                }
+            }
     }
 }
 

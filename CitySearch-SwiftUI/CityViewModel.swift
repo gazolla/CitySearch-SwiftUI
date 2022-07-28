@@ -33,18 +33,10 @@ class CityViewModel: ObservableObject {
     }
 
     func saveCities() throws {
-            if self.cities.isEmpty {
-                let encoder = JSONEncoder()
-                let data = try encoder.encode([City]())
-                UserDefaults.standard.set(data, forKey: "cities")
-                print("deleted")
-            } else {
-                let encoder = JSONEncoder()
-                let data = try encoder.encode(self.cities)
-                UserDefaults.standard.set(data, forKey: "cities")
-                print(self.cities)
-                print("saved")
-            }
+        let encoder = JSONEncoder()
+        let data = try encoder.encode(self.cities.isEmpty ? [City]() : self.cities)
+        UserDefaults.standard.set(data, forKey: "cities")
+        print(self.cities.isEmpty ? "deleted" : "saved")
     }
 
     

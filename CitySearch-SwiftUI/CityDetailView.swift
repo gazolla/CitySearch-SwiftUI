@@ -9,14 +9,16 @@ import SwiftUI
 
 struct CityDetailView: View {
     
+    var dismissAction: (()->())?
     @ObservedObject var cvm: CityViewModel
     
     var body: some View {
-        if let location = cvm.currentCity {
+        if let city = cvm.currentCity {
             VStack(){
-                CityCellView(city:location)
+                CityCellView(city:city)
                 Button {
-                    cvm.addCity(location:location)
+                    cvm.addCity(location:city)
+                    dismissAction!()
                 } label: {
                     Text("Add City")
                         .frame(maxWidth: .infinity, maxHeight: 35)

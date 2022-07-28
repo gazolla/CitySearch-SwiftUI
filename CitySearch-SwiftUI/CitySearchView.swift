@@ -19,7 +19,7 @@ struct CitySearchView: View {
             SearchBar(text: $searchText)
                 .padding(.top)
             if let city = cvm.currentCity {
-                CityDetailView(cvm: cvm)
+                CityDetailView(dismissAction: dismissSheet, cvm: cvm)
                 MapView(city: city)
                     .presentationDetents([ .medium, .large])
             } else {
@@ -38,6 +38,10 @@ struct CitySearchView: View {
                cvm.searchCity(text: newValue)
            }
         }
+    }
+    
+    private func dismissSheet(){
+        dismiss()
     }
 }
 

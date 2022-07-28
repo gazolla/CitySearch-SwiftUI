@@ -14,8 +14,9 @@ struct CityEmptyListView: View {
     var body: some View {
         ScrollView{
             VStack(spacing: 10) {
-                Text("")
-                    .padding(EdgeInsets(top: 100, leading: 0, bottom: 0, trailing: 0))
+                
+                Image("City")
+                    .padding()
                 Text ("There are no Cities!")
                     .font(.title)
                     .fontWeight(.semibold)

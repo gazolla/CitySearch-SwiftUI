@@ -40,11 +40,6 @@ struct CityListModifier: ViewModifier {
                     .sheet(isPresented: $showSearchCity) {
                         CitySearchView(cvm:cvm)
                     })
-            .onChange(of: showSearchCity) { newValue in
-                if !newValue {
-                    cvm.currentCity = nil
-                }
-            }
     }
 }
 

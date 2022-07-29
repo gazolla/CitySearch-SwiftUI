@@ -29,8 +29,10 @@ struct CityDetailView: View {
                 }
             }
             .padding()
+            .onDisappear{
+                cvm.currentCity = nil
+            }
         }
-        
     }
 }
 

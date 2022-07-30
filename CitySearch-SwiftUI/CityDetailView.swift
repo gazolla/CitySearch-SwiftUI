@@ -17,7 +17,9 @@ struct CityDetailView: View {
             VStack(){
                 CityCellView(city:city)
                 Button {
-                    cvm.addCity(location:city)
+                    withAnimation {
+                        cvm.addCity(city:city)
+                    }
                     dismissAction!()
                 } label: {
                     Text("Add City")

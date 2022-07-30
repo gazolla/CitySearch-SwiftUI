@@ -15,24 +15,32 @@ struct CityListView: View {
     var body: some View {
         List{
             ForEach(cvm.cities){ city in
-                CityCellView(city: city)
-            }
+                NavigationLink(destination: CityInfoView(city:city)) {
+                    CityCellView(city: city)
+                }
+             }
             .onDelete(perform: { indexSet in
                 self.showAlert = true
                 self.deleteIndexSet = indexSet
             })
             .alert(isPresented: $showAlert) {
                 let indexSet = self.deleteIndexSet
-                return Alert(title: Text("Are you sure?"), primaryButton: .cancel(), secondaryButton: .destructive(Text("Delete"), action: {
-                    deleteCity(at: indexSet!)
+                return Alert(
+                    title: Text("Are you sure?"),
+                    primaryButton: .cancel(),
+                    secondaryButton: .destructive(Text("Delete"),
+                                    action: {
+                                        deleteCity(at: indexSet!)
                 }))
             }
         }
     }
     
     private func deleteCity(at indexSet: IndexSet){
-        cvm.deleteCity(at: indexSet)
-        try! cvm.saveCities()
+        withAnimation {
+            cvm.deleteCity(at: indexSet)
+            try! cvm.saveCities()
+        }
     }
 }
 

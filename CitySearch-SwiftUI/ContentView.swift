@@ -15,7 +15,7 @@ struct ContentView: View {
     @ObservedObject private var cvm = CityViewModel.instance
 
     var body: some View {
-        NavigationView{
+        NavigationStack{
             if cvm.cities.isEmpty {
                 CityEmptyListView()
                     .modifier(CityListModifier(showSearchCity: showSearchCity, cvm: cvm))

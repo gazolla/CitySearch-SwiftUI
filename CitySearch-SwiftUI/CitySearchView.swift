@@ -18,14 +18,11 @@ struct CitySearchView: View {
         VStack{
             SearchBar(text: $searchText)
                 .padding(.top)
-            if let city = cvm.currentCity {
-                CityDetailView(dismissAction: dismissSheet, cvm: cvm)
-                MapView(city: city)
-                    .presentationDetents([ .medium, .large])
-            } else {
-                MapView(city: cvm.currentCity ?? City())
-                    .presentationDetents([ .medium, .large])
+            if let _ = cvm.currentCity {
+                CityDetailView(dismissAction: dismissSheet, cvm: cvm)            
             }
+            MapView(city: cvm.currentCity ?? City())
+                .presentationDetents([ .medium, .large])
         }
         .onDisappear{
             try! cvm.saveCities()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C352344E28956C3200F4433C /* CityInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352344D28956C3200F4433C /* CityInfoView.swift */; };
 		C363566D2892109C005DD876 /* CityEmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C363566C2892109C005DD876 /* CityEmptyListView.swift */; };
 		C363566F2892135E005DD876 /* CityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C363566E2892135E005DD876 /* CityListView.swift */; };
 		C366AF3328792A65001A81B5 /* CitySearch_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366AF3228792A65001A81B5 /* CitySearch_SwiftUIApp.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C352344D28956C3200F4433C /* CityInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInfoView.swift; sourceTree = "<group>"; };
 		C363566C2892109C005DD876 /* CityEmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityEmptyListView.swift; sourceTree = "<group>"; };
 		C363566E2892135E005DD876 /* CityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListView.swift; sourceTree = "<group>"; };
 		C366AF2F28792A65001A81B5 /* CitySearch-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CitySearch-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 				C3DA9F872880507100706119 /* MapView.swift */,
 				C363566C2892109C005DD876 /* CityEmptyListView.swift */,
 				C363566E2892135E005DD876 /* CityListView.swift */,
+				C352344D28956C3200F4433C /* CityInfoView.swift */,
 			);
 			path = "CitySearch-SwiftUI";
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				C366AF3328792A65001A81B5 /* CitySearch_SwiftUIApp.swift in Sources */,
 				C3D99184287B555600CD747B /* City.swift in Sources */,
 				C3D99188287B94BC00CD747B /* CitySearchView.swift in Sources */,
+				C352344E28956C3200F4433C /* CityInfoView.swift in Sources */,
 				C3D99186287B56E300CD747B /* CityViewModel.swift in Sources */,
 				C3D9918A287C538400CD747B /* SearchBar.swift in Sources */,
 				C363566D2892109C005DD876 /* CityEmptyListView.swift in Sources */,

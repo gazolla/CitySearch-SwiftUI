@@ -40,8 +40,8 @@ class CityViewModel: ObservableObject {
     }
 
     
-    func addCity(location:City){
-        self.cities.append(location)
+    func addCity(city:City){
+        self.cities.append(city)
     }
     
     func addCity(){

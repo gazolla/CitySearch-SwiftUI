@@ -8,14 +8,24 @@
 import SwiftUI
  
 struct SearchBar: View {
+    
+    enum FocusField: Hashable {
+        case field
+    }
+    
     @Binding var text: String
- 
+    @FocusState private var focusedField: FocusField?
     @State private var isEditing = false
  
     var body: some View {
         HStack {
                     
                     TextField("Search ...", text: $text)
+                        .focused($focusedField, equals: .field)
+                        .task {
+                            self.focusedField = .field
+                            self.isEditing = true
+                          }
                         .padding(7)
                         .padding(.horizontal, 25)
                         .background(Color(.systemGray6))

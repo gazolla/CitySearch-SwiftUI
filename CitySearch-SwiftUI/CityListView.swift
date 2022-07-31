@@ -10,7 +10,7 @@ import SwiftUI
 struct CityListView: View {
     @State private var showAlert:Bool = false
     @State private var deleteIndexSet: IndexSet?
-    @StateObject var cvm:CityViewModel = CityViewModel.instance
+    @StateObject var cvm:CityViewModel 
 
     var body: some View {
         List{

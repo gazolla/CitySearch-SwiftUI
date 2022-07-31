@@ -10,17 +10,20 @@ import SwiftUI
 struct CityInfoView: View {
     @State var city: City
     var body: some View {
-        HStack{
-                Image(city.flagIconURL ?? "empty")
-                    .frame(alignment: .leading)
-                VStack(alignment: .leading){
-                    Text(city.name ?? "")
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity, alignment:.leading)
-                    Text(city.country ?? "")
-                        .fontWeight(.thin)
-                }
+        List{
+            HStack{
+                    Image(city.flagIconURL ?? "empty")
+                        .frame(alignment: .leading)
+                    VStack(alignment: .leading){
+                        Text(city.name ?? "")
+                            .fontWeight(.bold)
+                            .frame(maxWidth: .infinity, alignment:.leading)
+                        Text(city.country ?? "")
+                            .fontWeight(.thin)
+                    }
+            }
         }
+        
     }
 }
 

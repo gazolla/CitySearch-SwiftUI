@@ -15,20 +15,37 @@ struct CitySearchView: View {
     @ObservedObject var cvm: CityViewModel
 
     var body: some View {
-        VStack{
-            SearchBar(text: $searchText)
-                .padding(.top)
-            if let _ = cvm.currentCity {
-                CityDetailView(dismissAction: dismissSheet, cvm: cvm)            
+        NavigationView{
+            VStack{
+                SearchBar(text: $searchText)
+                    .padding(.top)
+                if let city = cvm.currentCity {
+                    CityDetailView(dismissAction: dismissSheet, cvm: cvm)
+                    MapView(city: city)
+                        .presentationDetents([ .medium, .large])
+                } else {
+                    MapView(city: cvm.currentCity ?? City())
+                        .presentationDetents([ .medium, .large])
+                }
             }
-            MapView(city: cvm.currentCity ?? City())
-                .presentationDetents([ .medium, .large])
+            .navigationTitle("Search City")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing: Button(action: {
+                dismiss()
+            }, label: {
+                Image(systemName: "xmark.circle.fill")
+                    .foregroundColor(.gray)
+            }))
         }
+        
         .onDisappear{
             try! cvm.saveCities()
         }
         .onSubmit {
-            cvm.searchCity(text: searchText)
+            withAnimation {
+                cvm.searchCity(text: searchText)
+            }
+                
         }
         .onChange(of: searchText) { newValue in
            if newValue.isEmpty {

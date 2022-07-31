@@ -12,15 +12,15 @@ struct ContentView: View {
     @State private var showAlert:Bool = false
     @State private var deleteIndexSet: IndexSet?
     @State private var showSearchCity: Bool = false
-    @ObservedObject private var cvm = CityViewModel.instance
+    @StateObject private var cvm = CityViewModel.instance
 
     var body: some View {
-        NavigationStack{
+        NavigationView{
             if cvm.cities.isEmpty {
                 CityEmptyListView()
                     .modifier(CityListModifier(showSearchCity: showSearchCity, cvm: cvm))
             } else {
-                CityListView()
+                CityListView(cvm: cvm)
                     .modifier(CityListModifier(showSearchCity: showSearchCity, cvm: cvm))
             }
         }

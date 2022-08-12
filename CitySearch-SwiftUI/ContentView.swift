@@ -22,6 +22,9 @@ struct ContentView: View {
             } else {
                 CityListView(cvm: cvm)
                     .modifier(CityListModifier(showSearchCity: showSearchCity, cvm: cvm))
+                    .refreshable {
+                        try? cvm.loadCities()
+                    }
             }
         }
     }
